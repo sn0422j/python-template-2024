@@ -1,0 +1,13 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "ruff.fixAll": false,
+    "python.defaultInterpreterPath": "/tmp/python-venv/.venv/bin/python",
+    "terminal.integrated.defaultProfile.linux": "bash",
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "python-template-2024"
+version = "0.0.0"
+dependencies = [
+  "pydantic",
+]
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "ruff",
+  "ipykernel",
+]
+
+[tool.black]
+line-length = 120
+target-version = ["py312"]
+
+[tool.ruff]
+select = ["E", "F"]
+ignore = []
+unfixable = []
+line-length = 120
+target-version = "py312"
