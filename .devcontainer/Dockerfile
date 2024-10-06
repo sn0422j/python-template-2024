@@ -24,9 +24,10 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 # ENV UV_PATH=/home/${USERNAME}/.cargo/bin
 ENV UV_PATH=/root/.cargo/bin
 ENV PATH=${UV_PATH}:${PATH}
+ENV UV_PROJECT_ENVIRONMENT=/tmp/python-venv/.venv
 RUN uv venv && . .venv/bin/activate
 RUN --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    uv pip install -e .
+    uv sync --no-dev
 
 ### GPU Version ###
 # FROM nvidia/cuda:12.3.2-devel-ubuntu22.04

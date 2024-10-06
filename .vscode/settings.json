@@ -1,13 +1,18 @@
 {
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSaveMode": "file",
+        "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports.ruff": "explicit"
-        }
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
     },
-    "ruff.fixAll": false,
+    "ruff.fixAll": true,
+    "notebook.formatOnSave.enabled": false,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
     "python.defaultInterpreterPath": "/tmp/python-venv/.venv/bin/python",
     "terminal.integrated.defaultProfile.linux": "bash",
 }

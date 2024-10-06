@@ -3,4 +3,4 @@ set -euxo pipefail
 cd "$(dirname "$0")/../"
 
 source /tmp/python-venv/.venv/bin/activate
-uv pip install -e .[dev]
+uv sync --extra dev
