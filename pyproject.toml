@@ -62,10 +62,10 @@ select = [
   "NPY",  # numPy-specific rules
   "RUF",  # ruff-specific rules
   "T10",  # flake8-debugger
-  "PLR",  
+  "PLR",  # pylint refactor
  ]
 ignore = [
-  "PLR2004",  # 	magic-value-comparison	
+  "PLR2004",  # magic-value-comparison
 ]
 fixable = ["ALL"]
 unfixable = [
