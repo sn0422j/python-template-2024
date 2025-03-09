@@ -51,7 +51,6 @@ select = [
   "E",  # pycodestyle error
   "F",  # pyflakes
   "W",  # pycodestyle warning
-  "C90",  # mccabe
   "I",  # isort
   "C4",  # flake8-comprehensions
   "PT",  # flake8-pytest-style
@@ -62,10 +61,10 @@ select = [
   "NPY",  # numPy-specific rules
   "RUF",  # ruff-specific rules
   "T10",  # flake8-debugger
-  "PLR",  # pylint refactor
  ]
 ignore = [
-  "PLR2004",  # magic-value-comparison
+  "PLR",  # pylint refactor
+  "C90",  # mccabe
 ]
 fixable = ["ALL"]
 unfixable = [

@@ -21,8 +21,7 @@ WORKDIR /tmp/python-venv
 
 ### Using uv ###
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
-# ENV UV_PATH=/home/${USERNAME}/.cargo/bin
-ENV UV_PATH=/root/.cargo/bin
+ENV UV_PATH=/root/.local/bin
 ENV PATH=${UV_PATH}:${PATH}
 ENV UV_PROJECT_ENVIRONMENT=/tmp/python-venv/.venv
 RUN uv venv && . .venv/bin/activate
